@@ -31,7 +31,7 @@ def eval_fn(data_loader, model, device):
     for data in tqdm(data_loader, total=len(data_loader)):
         for k, v in data.items():
             data[k] = v.to(device)
-            _, _, loss = model(**data)
+        _, _, loss = model(**data)
         eval_loss += loss.item()
 
     return eval_loss/len(data_loader)
