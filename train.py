@@ -18,9 +18,11 @@ from transformers import get_linear_schedule_with_warmup
 
 
 def process_data(path):
+    print(f"--> Reading dataset from {path} for training")
     df = pd.read_csv(path, encoding='latin-1')
     df['Sentence #'].fillna(method='ffill', inplace=True)
 
+    print(f"--> Fitting LabelEncoder on entities and pos")
     enc_pos = preprocessing.LabelEncoder()
     enc_tag = preprocessing.LabelEncoder()
 
@@ -37,15 +39,18 @@ def process_data(path):
 
 
 if __name__ == '__main__':
+
     path = config.TRAIN_DATA_PATH
     sent_list, pos_list, tag_list, enc_pos, enc_tag = process_data(path)
 
     # saving label-encoder for inference-time
+    print(f"--> Saving the labelEncoder at {config.LABEL_ENCODER_PATH} for inference.")
     label_encoders = {'enc_pos': enc_pos, "enc_tag": enc_tag}
     joblib.dump(label_encoders, config.LABEL_ENCODER_PATH)
 
     num_pos = len(enc_pos.classes_)
     num_tag = len(enc_tag.classes_)
+    print(f"Number of NER Classes {num_tag}\t\tNumber of POS Classes {num_pos}")
 
     (train_sent,
      test_sent,
@@ -59,6 +64,7 @@ if __name__ == '__main__':
     train_dataset = dataset.EntityDataset(train_sent, train_pos, train_tag)
     valid_dataset = dataset.EntityDataset(test_sent, test_pos, test_tag)
 
+    print(f"Creating Dataloaders with TRAIN_BATCH_SIZE: {config.TRAIN_BATCH_SIZE} and VAL_BATCH_SIZE: {config.VAL_BATCH_SIZE}")
     train_dataloader = torch.utils.data.DataLoader(train_dataset,
                                                    batch_size=config.TRAIN_BATCH_SIZE,
                                                    num_workers=1)
@@ -69,6 +75,8 @@ if __name__ == '__main__':
 
     # configuring model
     device = torch.device(config.DEVICE)
+    print(f"--> Using {device} for training")
+    print("Initializing the NERModel and setting optimizer")
     model = NERModel(num_tag, num_pos)
     model.to(device)
 
@@ -89,18 +97,14 @@ if __name__ == '__main__':
     )
 
     # starting the trainer
+    print(f"Starting training for {config.EPOCHS} Epochs: ")
     best_loss = np.inf
     for epoch in range(config.EPOCHS):
         train_loss = engine.train_fn(train_dataloader, model, optimizer, device, scheduler)
         val_loss = engine.eval_fn(valid_dataloader, model,  device)
-        print(f'Epoch: {epoch}       TrainLoss:{train_loss}       ValLoss{val_loss}')
+        print(f'Epoch: {epoch+1}       TrainLoss:{train_loss}       ValLoss{val_loss}')
         if val_loss < best_loss:
             torch.save(model.state_dict(), config.SAVE_MODEL_PATH)
             best_loss = val_loss
-
-
-
-
-
 
 #{Word:tags[i] for i iqan range(len(tokenize(word))) for word in sentence.split(" ")]}
