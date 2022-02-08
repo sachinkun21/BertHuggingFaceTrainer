@@ -1,0 +1,27 @@
+--> Reading dataset from dvcfiles/dataset/ner_dataset.csv for training
+--> Fitting LabelEncoder on entities and pos
+--> Saving the labelEncoder at label_encoder.joblib for inference.
+--> Number of NER Classes 7		Number of POS Classes 20
+--> Creating Dataloaders with TRAIN_BATCH_SIZE: 64 and VAL_BATCH_SIZE: 32
+--> Using cpu for training
+--> Initializing the NERModel and setting optimizer
+--> Starting training for 5 Epochs:
+100%|██████████| 1/1 [00:05<00:00,  5.24s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+Epoch: 0       TrainLoss:2.517605781555176       ValLoss2.547929286956787
+
+100%|██████████| 1/1 [00:02<00:00,  2.65s/it]
+100%|██████████| 1/1 [00:05<00:00,  5.31s/it]
+
+100%|██████████| 1/1 [00:02<00:00,  2.53s/it]
+100%|██████████| 1/1 [00:02<00:00,  2.76s/it]
+100%|██████████| 1/1 [00:05<00:00,  5.31s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.63s/it]
+100%|██████████| 1/1 [00:05<00:00,  5.37s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.83s/it]
+100%|██████████| 1/1 [00:07<00:00,  7.09s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+
+100%|██████████| 1/1 [00:04<00:00,  4.50s/it]

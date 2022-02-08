@@ -1,0 +1,229 @@
+2022-02-08 16:18:02,637 INFO    MainThread:2816 [internal.py:wandb_internal():89] W&B internal server running at pid: 2816, started at: 2022-02-08 16:18:02.637761
+2022-02-08 16:18:02,639 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: check_version
+2022-02-08 16:18:02,640 INFO    WriterThread:2816 [datastore.py:open_for_write():77] open: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\run-1ouzqkbd.wandb
+2022-02-08 16:18:02,642 DEBUG   SenderThread:2816 [sender.py:send():235] send: header
+2022-02-08 16:18:02,642 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: check_version
+2022-02-08 16:18:02,741 DEBUG   SenderThread:2816 [sender.py:send():235] send: run
+2022-02-08 16:18:03,102 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: run_start
+2022-02-08 16:18:03,118 INFO    SenderThread:2816 [dir_watcher.py:__init__():169] watching files in: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files
+2022-02-08 16:18:03,119 INFO    SenderThread:2816 [sender.py:_start_run_threads():809] run started: 1ouzqkbd with start time 1644317281
+2022-02-08 16:18:03,119 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:03,134 DEBUG   HandlerThread:2816 [meta.py:__init__():36] meta init
+2022-02-08 16:18:03,136 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:03,136 DEBUG   HandlerThread:2816 [meta.py:__init__():50] meta init done
+2022-02-08 16:18:03,136 DEBUG   HandlerThread:2816 [meta.py:probe():210] probe
+2022-02-08 16:18:03,144 DEBUG   HandlerThread:2816 [meta.py:_setup_git():200] setup git
+2022-02-08 16:18:03,286 DEBUG   HandlerThread:2816 [meta.py:_setup_git():207] setup git done
+2022-02-08 16:18:03,286 DEBUG   HandlerThread:2816 [meta.py:_save_pip():54] save pip
+2022-02-08 16:18:03,287 DEBUG   HandlerThread:2816 [meta.py:_save_pip():68] save pip done
+2022-02-08 16:18:03,287 DEBUG   HandlerThread:2816 [meta.py:probe():248] probe done
+2022-02-08 16:18:03,292 DEBUG   SenderThread:2816 [sender.py:send():235] send: files
+2022-02-08 16:18:03,293 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-02-08 16:18:03,299 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-08 16:18:03,299 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: stop_status
+2022-02-08 16:18:04,124 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log
+2022-02-08 16:18:04,124 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\wandb-metadata.json
+2022-02-08 16:18:04,124 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\wandb-summary.json
+2022-02-08 16:18:04,124 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\requirements.txt
+2022-02-08 16:18:04,208 INFO    Thread-17 :2816 [upload_job.py:push():137] Uploaded file C:\Users\kausach\AppData\Local\Temp\tmp69bij_q9wandb\1x0puv7e-wandb-metadata.json
+2022-02-08 16:18:06,127 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log
+2022-02-08 16:18:09,731 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:09,731 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:09,732 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:10,164 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\wandb-summary.json
+2022-02-08 16:18:12,183 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log
+2022-02-08 16:18:12,380 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:12,380 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:12,381 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:12,596 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:12,596 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:12,597 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:12,597 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:12,597 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:12,598 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:13,193 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\wandb-summary.json
+2022-02-08 16:18:14,199 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log
+2022-02-08 16:18:16,235 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log
+2022-02-08 16:18:18,293 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:18,293 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:18,295 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:18,682 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-08 16:18:18,682 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: stop_status
+2022-02-08 16:18:19,266 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\wandb-summary.json
+2022-02-08 16:18:20,277 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log
+2022-02-08 16:18:21,029 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:21,029 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:21,031 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:21,266 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:21,266 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:21,266 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:21,267 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:21,267 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:21,267 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:21,289 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\wandb-summary.json
+2022-02-08 16:18:22,296 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log
+2022-02-08 16:18:24,316 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log
+2022-02-08 16:18:26,378 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:26,378 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:26,379 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:27,356 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\wandb-summary.json
+2022-02-08 16:18:28,362 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log
+2022-02-08 16:18:29,000 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:29,000 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:29,002 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:29,213 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:29,213 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:29,214 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:29,214 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:29,214 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:29,215 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:29,369 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\wandb-summary.json
+2022-02-08 16:18:30,373 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log
+2022-02-08 16:18:33,753 DEBUG   SenderThread:2816 [sender.py:send():235] send: stats
+2022-02-08 16:18:33,995 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-08 16:18:33,995 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: stop_status
+2022-02-08 16:18:34,829 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:34,829 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:34,830 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:35,422 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\wandb-summary.json
+2022-02-08 16:18:36,430 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log
+2022-02-08 16:18:37,143 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:37,144 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:37,145 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:37,422 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:37,423 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:37,424 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:37,424 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:37,424 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:37,424 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:37,440 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\wandb-summary.json
+2022-02-08 16:18:39,462 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log
+2022-02-08 16:18:44,247 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:44,248 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:44,250 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:44,526 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\wandb-summary.json
+2022-02-08 16:18:45,542 INFO    Thread-12 :2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log
+2022-02-08 16:18:48,673 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:48,673 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:48,675 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:49,030 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:49,030 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:49,032 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:49,032 DEBUG   SenderThread:2816 [sender.py:send():235] send: history
+2022-02-08 16:18:49,032 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:49,033 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:49,177 DEBUG   SenderThread:2816 [sender.py:send():235] send: telemetry
+2022-02-08 16:18:49,177 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:18:49,177 DEBUG   SenderThread:2816 [sender.py:send():235] send: exit
+2022-02-08 16:18:49,177 INFO    SenderThread:2816 [sender.py:send_exit():371] handling exit code: 0
+2022-02-08 16:18:49,178 INFO    SenderThread:2816 [sender.py:send_exit():373] handling runtime: 46
+2022-02-08 16:18:49,178 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:49,179 INFO    SenderThread:2816 [sender.py:send_exit():379] send defer
+2022-02-08 16:18:49,179 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:18:49,179 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:18:49,179 INFO    HandlerThread:2816 [handler.py:handle_request_defer():154] handle defer: 0
+2022-02-08 16:18:49,179 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:18:49,180 INFO    SenderThread:2816 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-02-08 16:18:49,180 INFO    SenderThread:2816 [sender.py:transition_state():392] send defer: 1
+2022-02-08 16:18:49,180 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:18:49,180 INFO    HandlerThread:2816 [handler.py:handle_request_defer():154] handle defer: 1
+2022-02-08 16:18:49,215 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:18:49,215 INFO    SenderThread:2816 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-02-08 16:18:49,216 INFO    SenderThread:2816 [sender.py:transition_state():392] send defer: 2
+2022-02-08 16:18:49,216 DEBUG   SenderThread:2816 [sender.py:send():235] send: stats
+2022-02-08 16:18:49,217 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:18:49,217 INFO    HandlerThread:2816 [handler.py:handle_request_defer():154] handle defer: 2
+2022-02-08 16:18:49,217 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:18:49,217 INFO    SenderThread:2816 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-02-08 16:18:49,217 INFO    SenderThread:2816 [sender.py:transition_state():392] send defer: 3
+2022-02-08 16:18:49,219 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:18:49,219 INFO    HandlerThread:2816 [handler.py:handle_request_defer():154] handle defer: 3
+2022-02-08 16:18:49,220 DEBUG   SenderThread:2816 [sender.py:send():235] send: summary
+2022-02-08 16:18:49,222 INFO    SenderThread:2816 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:18:49,222 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:18:49,222 INFO    SenderThread:2816 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-02-08 16:18:49,222 INFO    SenderThread:2816 [sender.py:transition_state():392] send defer: 4
+2022-02-08 16:18:49,223 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:18:49,223 INFO    HandlerThread:2816 [handler.py:handle_request_defer():154] handle defer: 4
+2022-02-08 16:18:49,223 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:18:49,223 INFO    SenderThread:2816 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-02-08 16:18:49,281 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:18:49,549 INFO    SenderThread:2816 [sender.py:transition_state():392] send defer: 5
+2022-02-08 16:18:49,550 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:18:49,550 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:18:49,550 INFO    HandlerThread:2816 [handler.py:handle_request_defer():154] handle defer: 5
+2022-02-08 16:18:49,550 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:18:49,551 INFO    SenderThread:2816 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-02-08 16:18:49,551 INFO    SenderThread:2816 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-02-08 16:18:49,576 INFO    SenderThread:2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\config.yaml
+2022-02-08 16:18:49,577 INFO    SenderThread:2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\wandb-summary.json
+2022-02-08 16:18:49,577 INFO    SenderThread:2816 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log
+2022-02-08 16:18:49,578 INFO    SenderThread:2816 [dir_watcher.py:finish():313] scan: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files
+2022-02-08 16:18:49,578 INFO    SenderThread:2816 [dir_watcher.py:finish():327] scan save: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\config.yaml config.yaml
+2022-02-08 16:18:49,578 INFO    SenderThread:2816 [dir_watcher.py:finish():327] scan save: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log output.log
+2022-02-08 16:18:49,580 INFO    SenderThread:2816 [dir_watcher.py:finish():327] scan save: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\requirements.txt requirements.txt
+2022-02-08 16:18:49,586 INFO    SenderThread:2816 [dir_watcher.py:finish():327] scan save: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\wandb-metadata.json wandb-metadata.json
+2022-02-08 16:18:49,586 INFO    SenderThread:2816 [dir_watcher.py:finish():327] scan save: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\wandb-summary.json wandb-summary.json
+2022-02-08 16:18:49,590 INFO    SenderThread:2816 [sender.py:transition_state():392] send defer: 6
+2022-02-08 16:18:49,591 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:18:49,591 INFO    HandlerThread:2816 [handler.py:handle_request_defer():154] handle defer: 6
+2022-02-08 16:18:49,591 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:18:49,591 INFO    SenderThread:2816 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-02-08 16:18:49,591 INFO    SenderThread:2816 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-08 16:18:49,652 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:18:49,653 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:18:49,762 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:18:49,762 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:18:49,869 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:18:49,870 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:18:49,977 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:18:49,978 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:18:50,086 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:18:50,087 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:18:50,195 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:18:50,196 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:18:50,305 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:18:50,306 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:18:50,414 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:18:50,415 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:18:50,516 INFO    Thread-18 :2816 [upload_job.py:push():137] Uploaded file C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\config.yaml
+2022-02-08 16:18:50,524 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:18:50,528 INFO    Thread-19 :2816 [upload_job.py:push():137] Uploaded file C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\output.log
+2022-02-08 16:18:50,529 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:18:50,549 INFO    Thread-20 :2816 [upload_job.py:push():137] Uploaded file C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\requirements.txt
+2022-02-08 16:18:50,580 INFO    Thread-21 :2816 [upload_job.py:push():137] Uploaded file C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\files\wandb-summary.json
+2022-02-08 16:18:50,648 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:18:50,649 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:18:50,771 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:18:50,772 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:18:50,786 INFO    Thread-11 :2816 [sender.py:transition_state():392] send defer: 7
+2022-02-08 16:18:50,787 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:18:50,788 INFO    HandlerThread:2816 [handler.py:handle_request_defer():154] handle defer: 7
+2022-02-08 16:18:50,788 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:18:50,788 INFO    SenderThread:2816 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-02-08 16:18:50,880 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:18:51,382 INFO    SenderThread:2816 [sender.py:transition_state():392] send defer: 8
+2022-02-08 16:18:51,383 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:18:51,384 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:18:51,385 INFO    HandlerThread:2816 [handler.py:handle_request_defer():154] handle defer: 8
+2022-02-08 16:18:51,385 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:18:51,385 INFO    SenderThread:2816 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-02-08 16:18:51,386 INFO    SenderThread:2816 [sender.py:transition_state():392] send defer: 9
+2022-02-08 16:18:51,387 DEBUG   SenderThread:2816 [sender.py:send():235] send: final
+2022-02-08 16:18:51,387 DEBUG   SenderThread:2816 [sender.py:send():235] send: footer
+2022-02-08 16:18:51,387 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:18:51,388 INFO    HandlerThread:2816 [handler.py:handle_request_defer():154] handle defer: 9
+2022-02-08 16:18:51,388 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:18:51,388 INFO    SenderThread:2816 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-02-08 16:18:51,487 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:18:51,487 DEBUG   SenderThread:2816 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:18:51,487 INFO    SenderThread:2816 [file_pusher.py:join():182] waiting for file pusher
+2022-02-08 16:18:52,154 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: get_summary
+2022-02-08 16:18:52,156 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: sampled_history
+2022-02-08 16:18:52,159 DEBUG   HandlerThread:2816 [handler.py:handle_request():131] handle_request: shutdown
+2022-02-08 16:18:52,159 INFO    HandlerThread:2816 [handler.py:finish():739] shutting down handler
+2022-02-08 16:18:52,389 INFO    WriterThread:2816 [datastore.py:close():281] close: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161801-1ouzqkbd\run-1ouzqkbd.wandb
+2022-02-08 16:18:53,157 INFO    SenderThread:2816 [sender.py:finish():1075] shutting down sender
+2022-02-08 16:18:53,157 INFO    SenderThread:2816 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-08 16:18:53,157 INFO    SenderThread:2816 [file_pusher.py:join():182] waiting for file pusher
+2022-02-08 16:18:53,162 INFO    MainThread:2816 [internal.py:handle_exit():79] Internal process exited

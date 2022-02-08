@@ -1,0 +1,32 @@
+--> Reading dataset from dvcfiles/dataset/ner_dataset.csv for training
+--> Fitting LabelEncoder on entities and pos
+--> Saving the labelEncoder at label_encoder.joblib for inference.
+--> Number of NER Classes 7		Number of POS Classes 20
+--> Creating Dataloaders with TRAIN_BATCH_SIZE: 64 and VAL_BATCH_SIZE: 32
+--> Using cpu for training
+--> Initializing the NERModel and setting optimizer
+--> Starting training for 5 Epochs:
+  0%|          | 0/1 [00:10<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\venv\lib\site-packages\torch\utils\data\dataloader.py", line 990, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "C:\Users\kausach\AppData\Local\Programs\Python\Python39\lib\multiprocessing\queues.py", line 114, in get
+    raise Empty
+_queue.Empty
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\train.py", line 123, in <module>
+    train_loss = engine.train_fn(train_dataloader, model, optimizer, device, scheduler, epoch, wandb)
+  File "C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\engine.py", line 11, in train_fn
+    for data in tqdm(data_loader, total=step_size):
+  File "C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\venv\lib\site-packages\tqdm\std.py", line 1180, in __iter__
+    for obj in iterable:
+  File "C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\venv\lib\site-packages\torch\utils\data\dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\venv\lib\site-packages\torch\utils\data\dataloader.py", line 1186, in _next_data
+    idx, data = self._get_data()
+  File "C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\venv\lib\site-packages\torch\utils\data\dataloader.py", line 1152, in _get_data
+    success, data = self._try_get_data()
+  File "C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\venv\lib\site-packages\torch\utils\data\dataloader.py", line 1003, in _try_get_data
+    raise RuntimeError('DataLoader worker (pid(s) {}) exited unexpectedly'.format(pids_str)) from e
+RuntimeError: DataLoader worker (pid(s) 17328) exited unexpectedly

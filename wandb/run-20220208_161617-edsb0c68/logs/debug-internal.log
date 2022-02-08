@@ -1,0 +1,145 @@
+2022-02-08 16:16:18,618 INFO    MainThread:13848 [internal.py:wandb_internal():89] W&B internal server running at pid: 13848, started at: 2022-02-08 16:16:18.618753
+2022-02-08 16:16:18,621 INFO    WriterThread:13848 [datastore.py:open_for_write():77] open: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\run-edsb0c68.wandb
+2022-02-08 16:16:18,621 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: check_version
+2022-02-08 16:16:18,623 DEBUG   SenderThread:13848 [sender.py:send():235] send: header
+2022-02-08 16:16:18,623 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: check_version
+2022-02-08 16:16:18,756 DEBUG   SenderThread:13848 [sender.py:send():235] send: run
+2022-02-08 16:16:19,110 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: run_start
+2022-02-08 16:16:19,111 INFO    SenderThread:13848 [dir_watcher.py:__init__():169] watching files in: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files
+2022-02-08 16:16:19,112 INFO    SenderThread:13848 [sender.py:_start_run_threads():809] run started: edsb0c68 with start time 1644317177
+2022-02-08 16:16:19,112 DEBUG   SenderThread:13848 [sender.py:send():235] send: summary
+2022-02-08 16:16:19,126 INFO    SenderThread:13848 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:16:19,135 DEBUG   HandlerThread:13848 [meta.py:__init__():36] meta init
+2022-02-08 16:16:19,135 DEBUG   HandlerThread:13848 [meta.py:__init__():50] meta init done
+2022-02-08 16:16:19,135 DEBUG   HandlerThread:13848 [meta.py:probe():210] probe
+2022-02-08 16:16:19,145 DEBUG   HandlerThread:13848 [meta.py:_setup_git():200] setup git
+2022-02-08 16:16:19,286 DEBUG   HandlerThread:13848 [meta.py:_setup_git():207] setup git done
+2022-02-08 16:16:19,286 DEBUG   HandlerThread:13848 [meta.py:_save_pip():54] save pip
+2022-02-08 16:16:19,287 DEBUG   HandlerThread:13848 [meta.py:_save_pip():68] save pip done
+2022-02-08 16:16:19,287 DEBUG   HandlerThread:13848 [meta.py:probe():248] probe done
+2022-02-08 16:16:19,292 DEBUG   SenderThread:13848 [sender.py:send():235] send: files
+2022-02-08 16:16:19,292 INFO    SenderThread:13848 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-02-08 16:16:19,299 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-08 16:16:19,300 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: stop_status
+2022-02-08 16:16:20,114 INFO    Thread-12 :13848 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\output.log
+2022-02-08 16:16:20,115 INFO    Thread-12 :13848 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\wandb-metadata.json
+2022-02-08 16:16:20,115 INFO    Thread-12 :13848 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\wandb-summary.json
+2022-02-08 16:16:20,115 INFO    Thread-12 :13848 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\requirements.txt
+2022-02-08 16:16:20,200 INFO    Thread-17 :13848 [upload_job.py:push():137] Uploaded file C:\Users\kausach\AppData\Local\Temp\tmpuga6tgn2wandb\32q70iyz-wandb-metadata.json
+2022-02-08 16:16:22,132 INFO    Thread-12 :13848 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\output.log
+2022-02-08 16:16:24,147 INFO    Thread-12 :13848 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\output.log
+2022-02-08 16:16:31,560 DEBUG   SenderThread:13848 [sender.py:send():235] send: telemetry
+2022-02-08 16:16:31,561 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:16:31,561 DEBUG   SenderThread:13848 [sender.py:send():235] send: exit
+2022-02-08 16:16:31,562 INFO    SenderThread:13848 [sender.py:send_exit():371] handling exit code: 1
+2022-02-08 16:16:31,563 INFO    SenderThread:13848 [sender.py:send_exit():373] handling runtime: 12
+2022-02-08 16:16:31,564 INFO    SenderThread:13848 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:16:31,565 INFO    SenderThread:13848 [sender.py:send_exit():379] send defer
+2022-02-08 16:16:31,565 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:16:31,567 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:16:31,568 INFO    HandlerThread:13848 [handler.py:handle_request_defer():154] handle defer: 0
+2022-02-08 16:16:31,568 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:16:31,568 INFO    SenderThread:13848 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-02-08 16:16:31,568 INFO    SenderThread:13848 [sender.py:transition_state():392] send defer: 1
+2022-02-08 16:16:31,569 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:16:31,569 INFO    HandlerThread:13848 [handler.py:handle_request_defer():154] handle defer: 1
+2022-02-08 16:16:31,587 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:16:31,587 INFO    SenderThread:13848 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-02-08 16:16:31,587 INFO    SenderThread:13848 [sender.py:transition_state():392] send defer: 2
+2022-02-08 16:16:31,587 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:16:31,588 INFO    HandlerThread:13848 [handler.py:handle_request_defer():154] handle defer: 2
+2022-02-08 16:16:31,588 DEBUG   SenderThread:13848 [sender.py:send():235] send: stats
+2022-02-08 16:16:31,588 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:16:31,588 INFO    SenderThread:13848 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-02-08 16:16:31,588 INFO    SenderThread:13848 [sender.py:transition_state():392] send defer: 3
+2022-02-08 16:16:31,589 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:16:31,589 INFO    HandlerThread:13848 [handler.py:handle_request_defer():154] handle defer: 3
+2022-02-08 16:16:31,589 DEBUG   SenderThread:13848 [sender.py:send():235] send: summary
+2022-02-08 16:16:31,590 INFO    SenderThread:13848 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-08 16:16:31,590 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:16:31,590 INFO    SenderThread:13848 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-02-08 16:16:31,590 INFO    SenderThread:13848 [sender.py:transition_state():392] send defer: 4
+2022-02-08 16:16:31,591 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:16:31,591 INFO    HandlerThread:13848 [handler.py:handle_request_defer():154] handle defer: 4
+2022-02-08 16:16:31,591 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:16:31,591 INFO    SenderThread:13848 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-02-08 16:16:31,681 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:16:31,941 INFO    SenderThread:13848 [sender.py:transition_state():392] send defer: 5
+2022-02-08 16:16:31,941 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:16:31,942 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:16:31,942 INFO    HandlerThread:13848 [handler.py:handle_request_defer():154] handle defer: 5
+2022-02-08 16:16:31,942 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:16:31,942 INFO    SenderThread:13848 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-02-08 16:16:31,942 INFO    SenderThread:13848 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-02-08 16:16:32,054 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:16:32,212 INFO    SenderThread:13848 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\wandb-summary.json
+2022-02-08 16:16:32,213 INFO    SenderThread:13848 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\output.log
+2022-02-08 16:16:32,214 INFO    SenderThread:13848 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\config.yaml
+2022-02-08 16:16:32,215 INFO    SenderThread:13848 [dir_watcher.py:finish():313] scan: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files
+2022-02-08 16:16:32,216 INFO    SenderThread:13848 [dir_watcher.py:finish():327] scan save: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\config.yaml config.yaml
+2022-02-08 16:16:32,216 INFO    SenderThread:13848 [dir_watcher.py:finish():327] scan save: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\output.log output.log
+2022-02-08 16:16:32,219 INFO    SenderThread:13848 [dir_watcher.py:finish():327] scan save: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\requirements.txt requirements.txt
+2022-02-08 16:16:32,227 INFO    SenderThread:13848 [dir_watcher.py:finish():327] scan save: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\wandb-metadata.json wandb-metadata.json
+2022-02-08 16:16:32,229 INFO    SenderThread:13848 [dir_watcher.py:finish():327] scan save: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\wandb-summary.json wandb-summary.json
+2022-02-08 16:16:32,232 INFO    SenderThread:13848 [sender.py:transition_state():392] send defer: 6
+2022-02-08 16:16:32,235 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:16:32,240 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:16:32,240 INFO    HandlerThread:13848 [handler.py:handle_request_defer():154] handle defer: 6
+2022-02-08 16:16:32,241 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:16:32,241 INFO    SenderThread:13848 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-02-08 16:16:32,243 INFO    SenderThread:13848 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-08 16:16:32,351 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:16:32,351 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:16:32,461 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:16:32,462 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:16:32,572 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:16:32,573 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:16:32,679 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:16:32,679 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:16:32,788 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:16:32,789 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:16:32,897 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:16:32,897 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:16:33,007 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:16:33,009 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:16:33,117 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:16:33,121 INFO    Thread-19 :13848 [upload_job.py:push():137] Uploaded file C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\output.log
+2022-02-08 16:16:33,124 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:16:33,124 INFO    Thread-18 :13848 [upload_job.py:push():137] Uploaded file C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\config.yaml
+2022-02-08 16:16:33,153 INFO    Thread-21 :13848 [upload_job.py:push():137] Uploaded file C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\wandb-summary.json
+2022-02-08 16:16:33,153 INFO    Thread-20 :13848 [upload_job.py:push():137] Uploaded file C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\files\requirements.txt
+2022-02-08 16:16:33,241 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:16:33,242 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:16:33,349 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:16:33,350 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:16:33,363 INFO    Thread-11 :13848 [sender.py:transition_state():392] send defer: 7
+2022-02-08 16:16:33,365 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:16:33,365 INFO    HandlerThread:13848 [handler.py:handle_request_defer():154] handle defer: 7
+2022-02-08 16:16:33,365 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:16:33,366 INFO    SenderThread:13848 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-02-08 16:16:33,454 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:16:34,215 INFO    SenderThread:13848 [sender.py:transition_state():392] send defer: 8
+2022-02-08 16:16:34,216 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:16:34,219 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:16:34,220 INFO    HandlerThread:13848 [handler.py:handle_request_defer():154] handle defer: 8
+2022-02-08 16:16:34,221 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:16:34,222 INFO    SenderThread:13848 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-02-08 16:16:34,222 INFO    SenderThread:13848 [sender.py:transition_state():392] send defer: 9
+2022-02-08 16:16:34,225 DEBUG   SenderThread:13848 [sender.py:send():235] send: final
+2022-02-08 16:16:34,227 DEBUG   SenderThread:13848 [sender.py:send():235] send: footer
+2022-02-08 16:16:34,228 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: defer
+2022-02-08 16:16:34,228 INFO    HandlerThread:13848 [handler.py:handle_request_defer():154] handle defer: 9
+2022-02-08 16:16:34,229 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: defer
+2022-02-08 16:16:34,229 INFO    SenderThread:13848 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-02-08 16:16:34,326 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-08 16:16:34,327 DEBUG   SenderThread:13848 [sender.py:send_request():249] send_request: poll_exit
+2022-02-08 16:16:34,328 INFO    SenderThread:13848 [file_pusher.py:join():182] waiting for file pusher
+2022-02-08 16:16:35,006 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: get_summary
+2022-02-08 16:16:35,007 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: sampled_history
+2022-02-08 16:16:35,008 DEBUG   HandlerThread:13848 [handler.py:handle_request():131] handle_request: shutdown
+2022-02-08 16:16:35,008 INFO    HandlerThread:13848 [handler.py:finish():739] shutting down handler
+2022-02-08 16:16:35,237 INFO    WriterThread:13848 [datastore.py:close():281] close: C:\Users\kausach\PycharmProjects\NerBERT_HuggingFace\wandb\run-20220208_161617-edsb0c68\run-edsb0c68.wandb
+2022-02-08 16:16:36,013 INFO    SenderThread:13848 [sender.py:finish():1075] shutting down sender
+2022-02-08 16:16:36,014 INFO    SenderThread:13848 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-08 16:16:36,014 INFO    SenderThread:13848 [file_pusher.py:join():182] waiting for file pusher
+2022-02-08 16:16:36,019 INFO    MainThread:13848 [internal.py:handle_exit():79] Internal process exited

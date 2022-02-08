@@ -2,8 +2,8 @@ import transformers
 import torch
 
 MAX_LEN = 128
-TRAIN_BATCH_SIZE = 32
-VAL_BATCH_SIZE = 16
+TRAIN_BATCH_SIZE = 64
+VAL_BATCH_SIZE = 32
 EPOCHS = 5
 BASE_MODEL_PATH = "dvcfiles/base_model/bert-base-uncased"
 SAVE_MODEL_PATH = "dvcfiles/finetuned_model/pytorch_model.bin"

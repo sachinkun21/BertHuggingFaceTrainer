@@ -21,10 +21,14 @@ from transformers import get_linear_schedule_with_warmup
 warnings.filterwarnings("ignore")
 logging.set_verbosity_error()
 
+import wandb
+
+# setting up wandb for tracking logs
+
 
 def process_data(path):
     print(f"--> Reading dataset from {path} for training")
-    df = pd.read_csv(path, encoding='latin-1')
+    df = pd.read_csv(path, encoding='latin-1').head(100)
     df['Sentence #'].fillna(method='ffill', inplace=True)
 
     print(f"--> Fitting LabelEncoder on entities and pos")
@@ -44,6 +48,7 @@ def process_data(path):
 
 
 if __name__ == '__main__':
+    wandb.init(project="BERTNerHF", entity="sachinkun21")
 
     path = config.TRAIN_DATA_PATH
     sent_list, pos_list, tag_list, enc_pos, enc_tag = process_data(path)
@@ -96,7 +101,8 @@ if __name__ == '__main__':
         ]
 
     num_train_steps = int(len(train_sent)/config.TRAIN_BATCH_SIZE*config.EPOCHS)
-    optimizer = AdamW(optimizer_params, lr=3e-5)
+    learning_rate = 3e-5
+    optimizer = AdamW(optimizer_params, lr=learning_rate)
     scheduler = get_linear_schedule_with_warmup(
         optimizer, num_warmup_steps=0, num_training_steps=num_train_steps
     )
@@ -104,10 +110,24 @@ if __name__ == '__main__':
     # starting the trainer
     print(f"--> Starting training for {config.EPOCHS} Epochs: ")
     best_loss = np.inf
+
+    wandb.config = {
+        "model":config.BASE_MODEL_PATH,
+        "learning_rate": learning_rate,
+        "epochs": config.EPOCHS,
+        "train_batch_size": config.TRAIN_BATCH_SIZE,
+        "test_batch_size":config.VAL_BATCH_SIZE
+    }
+
     for epoch in range(config.EPOCHS):
-        train_loss = engine.train_fn(train_dataloader, model, optimizer, device, scheduler)
-        val_loss = engine.eval_fn(valid_dataloader, model,  device)
-        print(f'Epoch: {epoch+1}       TrainLoss:{train_loss}       ValLoss{val_loss}')
+        train_loss = engine.train_fn(train_dataloader, model, optimizer, device, scheduler, epoch, wandb)
+        val_loss = engine.eval_fn(valid_dataloader, model,  device,  epoch, wandb)
+        print(f'Epoch: {epoch}       TrainLoss:{train_loss}       ValLoss{val_loss}')
+
+        # logging loss to wandb
+        wandb.log({"Epoch":epoch, "Epoch_Train_Loss": train_loss})
+        wandb.log({"Epoch":epoch, "Epoch_Val_Loss": val_loss})
+
         if val_loss < best_loss:
             print(f"--> Saving Model at {config.SAVE_MODEL_PATH}")
             torch.save(model.state_dict(), config.SAVE_MODEL_PATH)

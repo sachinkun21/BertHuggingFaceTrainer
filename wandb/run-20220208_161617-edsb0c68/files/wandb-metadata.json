@@ -1,0 +1,22 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.9.2",
+    "heartbeatAt": "2022-02-08T10:46:19.135935",
+    "startedAt": "2022-02-08T10:46:17.625895",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\kausach\\PycharmProjects\\NerBERT_HuggingFace\\train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/sachinkun21/BertHuggingFaceTrainer.git",
+        "commit": "5df3c4c8ec12a4acd30966942627bda77e06f740"
+    },
+    "email": "kausach@amazon.com",
+    "root": "C:/Users/kausach/PycharmProjects/NerBERT_HuggingFace",
+    "host": "DEL175CG050BW29",
+    "username": "kausach",
+    "executable": "C:\\Users\\kausach\\PycharmProjects\\NerBERT_HuggingFace\\venv\\Scripts\\python.exe"
+}
