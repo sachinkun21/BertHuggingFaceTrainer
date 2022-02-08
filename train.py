@@ -112,7 +112,7 @@ if __name__ == '__main__':
     best_loss = np.inf
 
     wandb.config = {
-        "model": config.BASE_MODEL_PATH,
+        "model":config.BASE_MODEL_PATH,
         "learning_rate": learning_rate,
         "epochs": config.EPOCHS,
         "train_batch_size": config.TRAIN_BATCH_SIZE,
@@ -127,9 +127,11 @@ if __name__ == '__main__':
         # logging loss to wandb
         wandb.log({"Epoch": epoch, "Epoch_Train_Loss": train_loss})
         wandb.log({"Epoch": epoch, "Epoch_Val_Loss": val_loss})
+        print({"Epoch": epoch, "Epoch_Train_Loss": train_loss})
+        print({"Epoch": epoch, "Epoch_Val_Loss": val_loss})
 
         if val_loss < best_loss:
-            print(f"--> Saving Model at {config.SAVE_MODEL_PATH}")
+            print(f"--> Saving Model at {config.SAVE_MODEL_PATH} with loss value as {val_loss}")
             torch.save(model.state_dict(), config.SAVE_MODEL_PATH)
             best_loss = val_loss
 
