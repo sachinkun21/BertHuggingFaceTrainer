@@ -13,4 +13,3 @@ TOKENIZER = transformers.BertTokenizer.from_pretrained(
 )
 LABEL_ENCODER_PATH = "label_encoder.joblib"
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
-
