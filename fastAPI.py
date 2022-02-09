@@ -9,10 +9,12 @@ app = FastAPI(title="NER with HuggingFace and BERT")
 async def home():
     return "<h2> Connected to BertNER API</h2>"
 
+
 @app.get("/predictTorch")
 async def get_entities_pos(text: str):
     result = predict(text)
     return result
+
 
 @app.get("/predictONNX")
 async def get_entities_pos(text: str):
