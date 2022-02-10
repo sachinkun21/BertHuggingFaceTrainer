@@ -1,12 +1,8 @@
-import torch
 from tqdm import tqdm
 
-import config
 
-train_batch = 0
 def train_fn(data_loader, model, optimizer, device, scheduler, epoch, wandb):
     # setting model to train mode
-    global train_batch
     model.train()
     final_loss = 0
     step_size = len(data_loader)
@@ -24,16 +20,13 @@ def train_fn(data_loader, model, optimizer, device, scheduler, epoch, wandb):
         final_loss += loss.item()
 
         # logging step level loss info
-        wandb.log({"Train Step": epoch, "TrainSteploss": final_loss}, step=train_batch)
-        train_batch += 1
+        wandb.log({"TrainSteploss": final_loss})
 
     return final_loss/len(data_loader)
 
 
-eval_batch = 0
 def eval_fn(data_loader, model, device, epoch, wandb):
     # setting model to eval mode
-    global eval_batch
     model.eval()
     eval_loss = 0
     step_size = len(data_loader)
@@ -44,7 +37,7 @@ def eval_fn(data_loader, model, device, epoch, wandb):
         eval_loss += loss.item()
 
         # logging step level loss info
-        wandb.log({"Train Step": epoch, "TrainSteploss": eval_loss}, step=eval_batch)
-        eval_batch += 1
+        wandb.log({"ValSteploss": eval_loss})
+
     return eval_loss/len(data_loader)
 
