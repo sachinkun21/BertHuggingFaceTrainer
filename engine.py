@@ -9,8 +9,6 @@ def train_fn(data_loader, model, optimizer, device, scheduler, epoch, wandb):
     global train_batch
     model.train()
     final_loss = 0
-    steps = 0
-    step_size = len(data_loader)
     # starting the training process
     for data in tqdm(data_loader, total=step_size):
         # setting data to device
@@ -25,7 +23,6 @@ def train_fn(data_loader, model, optimizer, device, scheduler, epoch, wandb):
         final_loss += loss.item()
 
         # logging step level loss info
-        steps += step_size
         wandb.log({"Train Step": epoch, "TrainSteploss": final_loss}, step=train_batch)
         train_batch += 1
 
@@ -38,7 +35,6 @@ def eval_fn(data_loader, model, device, epoch, wandb):
     global eval_batch
     model.eval()
     eval_loss = 0
-    step_size = len(data_loader)
     for data in tqdm(data_loader, total=step_size):
         for k, v in data.items():
             data[k] = v.to(device)
