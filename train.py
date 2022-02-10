@@ -28,7 +28,7 @@ import wandb
 
 def process_data(path):
     print(f"--> Reading dataset from {path} for training")
-    df = pd.read_csv(path, encoding='latin-1').head(100)
+    df = pd.read_csv(path, encoding='latin-1')
     df['Sentence #'].fillna(method='ffill', inplace=True)
 
     print(f"--> Fitting LabelEncoder on entities and pos")

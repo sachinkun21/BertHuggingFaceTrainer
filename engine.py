@@ -3,9 +3,10 @@ from tqdm import tqdm
 
 import config
 
-
+train_batch = 0
 def train_fn(data_loader, model, optimizer, device, scheduler, epoch, wandb):
     # setting model to train mode
+    global train_batch
     model.train()
     final_loss = 0
     steps = 0
@@ -25,16 +26,18 @@ def train_fn(data_loader, model, optimizer, device, scheduler, epoch, wandb):
 
         # logging step level loss info
         steps += step_size
-        wandb.log({"Train Step": epoch, "TrainSteploss": final_loss}, step=steps)
+        wandb.log({"Train Step": epoch, "TrainSteploss": final_loss}, step=train_batch)
+        train_batch += 1
 
     return final_loss/len(data_loader)
 
 
+eval_batch = 0
 def eval_fn(data_loader, model, device, epoch, wandb):
     # setting model to eval mode
+    global eval_batch
     model.eval()
     eval_loss = 0
-    steps = 0
     step_size = len(data_loader)
     for data in tqdm(data_loader, total=step_size):
         for k, v in data.items():
@@ -43,7 +46,7 @@ def eval_fn(data_loader, model, device, epoch, wandb):
         eval_loss += loss.item()
 
         # logging step level loss info
-        steps += step_size
-        wandb.log({"Train Step": epoch, "TrainSteploss": eval_loss}, step=steps)
+        wandb.log({"Train Step": epoch, "TrainSteploss": eval_loss}, step=eval_batch)
+        eval_batch += 1
     return eval_loss/len(data_loader)
 
