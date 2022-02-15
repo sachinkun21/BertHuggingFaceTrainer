@@ -1,9 +1,9 @@
+torch==1.10.2
 transformers==4.16.2
 tqdm==4.62.3
 scikit-learn==1.0.2
 joblib==1.1.0
 dvc[gdrive]==2.9.3
 wandb==0.12.10
-torch==1.10.2
 fastapi==0.73.0
 uvicorn==0.17.4
